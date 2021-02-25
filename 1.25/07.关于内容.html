@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="content" type="text">
+    <button onclick="send()">发送</button>
+    <div id="box"></div>
+
+    <script>
+        let oContent=document.getElementById('content');
+        let oBox=document.getElementById('box');
+        let send=()=>{
+            oBox.innerHTML=oBox.innerHTML+`<div>${oContent.value}</div>`;
+            oContent.value="";
+        }
+    </script>
+</body>
+</html>

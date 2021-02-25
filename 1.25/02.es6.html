@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let num;
+    // console.log(num);
+    // num = 200;
+    // const num1 = 300;
+    // undefined
+    // function add() {
+    //     for (let i = 0; i < arguments.length; i++) {
+    //
+    //     }
+    // }
+    //
+    // add(1,2);
+
+    let num = 100;
+    let str = "hello";
+    let bool = true;
+    let arr = [1, "hello", true];
+    let user = {
+        username: "tom",
+        age: 13,
+        gender: false
+    }
+    //console.log(arr[1]);
+    //console.log(user.username);
+
+    let userList = [
+        {username: "tom", age: 12, gender: false, grade: 77},
+        {username: "tom", age: 12, gender: false, grade: 78},
+        {username: "tom", age: 12, gender: false, grade: 74},
+        {username: "tom", age: 12, gender: false, grade: 76},
+    ]
+
+    let a = 0;
+    for (let x of userList) {
+        a = a + x.grade;
+    }
+    console.log(a / userList.length)
+
+    /*
+*   for(User item : userList){
+*       sout(user.getUsername())
+*   }
+* */
+
+    let b = 0;
+    userList.forEach(function (user, index) {
+        b = b + user.grade;
+    })
+    console.log(b / userList.length)
+</script>
+</body>
+</html>

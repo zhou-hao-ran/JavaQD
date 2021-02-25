@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="text">
+<script>
+    // onclick 鼠标点击
+    // onmouseover 鼠标移入
+    // onmousedown 鼠标按键按住
+    // onmouseup 鼠标按键松开
+    // onchange 域内容改变
+    // oncontextmenu 右击鼠标时触发（默认有右键菜单）
+    // onblur 失去焦点时事件
+    // onfocus 获取焦点时事件
+    // alert() 方法用于显示带有一条指定消息和一个 OK 按钮的警告框
+    let oText = document.getElementById('text');
+    oText.onfocus = () => {
+        console.log(1);
+    }
+    oText.onblur = () => {
+        console.log(2);
+    }
+</script>
+</body>
+</html>

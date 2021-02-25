@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box {
+            width: 350px;
+            padding: 10px;
+            border: 10px solid #a7a7a7;
+            background: #1887bd;
+            color: #fff;
+            margin: 10px;
+        }
+
+        span {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+<input type="text" placeholder="查找关键字">
+<input type="text" placeholder="替换">
+<button>查找</button>
+<button>替换</button>
+<div id="box">
+    东软睿道是一支独具特色的IT培训团队，东软睿道是一支独具特色的IT培训团队，
+    东软睿道是一支独具特色的IT培训团队，东软睿道是一支独具特色的IT培训团队，
+    东软睿道是一支独具特色的IT培训团队，东软睿道是一支独具特色的IT培训团队，
+    东软睿道是一支独具特色的IT培训团队，东软睿道是一支独具特色的IT培训团队。
+</div>
+
+<script>
+    let oKey = document.getElementsByTagName('input')[0];
+    let oFind = document.getElementsByTagName('button')[0];
+    let oRe = document.getElementsByTagName('button')[1];
+    let oReword = document.getElementsByTagName('input')[1];
+    let oBox = document.getElementsByTagName('div')[0];
+    let temp = oBox.innerHTML;
+    oFind.onclick = () => {
+        if (oKey.value == null || oKey.value == "") {
+            alert("没有输入内容");
+        } else {
+            let arr = temp.split(oKey.value);
+            oBox.innerHTML = arr.join(`<span>${oKey.value}</span>`)
+        }
+        oRe.onclick = () => {
+            if (oKey.value == null || oKey.value == "" || oReword.value == null || oReword.value == "") {
+                alert("没有输入内容");
+            } else {
+                let arr = temp.split(oKey.value);
+                oBox.innerHTML = arr.join(oReword.value);
+                temp = oBox.innerHTML;
+            }
+        }
+    }
+</script>
+</body>
+</html>

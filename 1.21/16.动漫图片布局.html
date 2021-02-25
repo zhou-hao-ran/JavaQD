@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #box {
+            width: 500px;
+            height: 700px;
+            border: 10px solid pink;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        a {
+            width: 50px;
+            line-height: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background: black;
+            opacity: 0.5;
+            text-align: center;
+            border: 5px solid purple;
+            border-radius: 50%;
+            position: absolute;
+            top: 300px;
+        }
+
+        a:hover {
+            opacity: 0.8; /*透明度*/
+            transform: scale(1.2); /*缩放比例*/
+            transition: 0.2s; /*过渡时间*/
+        }
+
+        .leftBtn {
+            left: 10px;
+        }
+
+        .rightBtn {
+            right: 10px;
+        }
+
+        .bg {
+            width: 100%;
+            height: 30px;
+            background: black;
+            opacity: 0.5;
+            position: absolute;
+        }
+
+        .topBg {
+            top: 0;
+        }
+
+        .bottomBg {
+            bottom: 0;
+        }
+
+        .text {
+            width: 100%;
+            line-height: 30px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <img src="image/1.jpg">
+    <a href="javascript:;" class="leftBtn"><</a>
+    <a href="javascript:;" class="rightBtn">></a>
+    <p class="bg topBg"></p>
+    <p class="bg bottomBg"></p>
+    <p class="text topBg">1/4</p>
+    <p class="text bottomBg">震惊！美女醒来发现身体不适</p>
+</div>
+</body>
+</html>

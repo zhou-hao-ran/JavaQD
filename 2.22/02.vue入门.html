@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--只有表单控件元素才能双向绑定-->
+<div id="app">
+    <input type="text" v-model="num">
+    <br>
+    胡歌拥有{{num}}粉丝
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: "#app",//挂载元素，指定视图
+        data: {
+            num: 100//数据 model
+        }
+    })
+</script>
+</body>
+</html>

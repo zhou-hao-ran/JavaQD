@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>淘宝网手机版</title>
+    <style>
+        /*样式重置*/
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            padding-top: 12vw;
+            background: #f4f4f4;
+        }
+
+        /*头部*/
+        #header {
+            width: 100%;
+            height: 12vw;
+            display: flex;
+            background: #ff852a;
+            align-items: center;
+            justify-content: space-around;
+            position: fixed;
+            top: 0;
+        }
+
+        .bgLogo {
+            width: 7vw;
+            height: 5vw;
+            background: url("./image/1.png") no-repeat;
+            background-size: contain;
+        }
+
+        .search {
+            width: 85vw;
+            line-height: 7vw;
+            background: #ff4e22;
+            font-size: 3.5vw;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 1vw;
+        }
+
+        /*  轮播  */
+        #loop {
+            width: 100%;
+            height: 30vw;
+        }
+
+        #loop img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /*  导航  */
+        #nav {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            background: #ffffff;
+            padding-bottom: 4vw;
+        }
+
+        #nav li {
+            width: 20vw;
+            height: 20vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #nav li img {
+            width: 17vw;
+            height: 14vw;
+        }
+
+        #nav li p {
+            font-size: 3.5vw;
+            color: #666666;
+        }
+
+        /*商品推荐*/
+        #products {
+            width: 95%;
+            background: #ffffff;
+            border-radius: 3vw;
+            margin: 3vw auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #top {
+            display: flex;
+        }
+
+        .left, .right {
+            width: 50%;
+            box-sizing: border-box;
+            border-bottom: 1px solid red;
+        }
+
+        .left {
+            border-right: 1px solid #f4f4f4;
+        }
+
+        .list {
+            width: 100%;
+            display: flex;
+        }
+
+        .left1, .right1 {
+            width: 50%;
+        }
+
+        h3 {
+            font-size: 4vw;
+            position: relative;
+            left: 4vw;
+        }
+
+        .proImg {
+            width: 20vw;
+            background: #ffffff;
+            box-sizing: border-box;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            border-radius: 2vw;
+            text-align: center;
+            margin-left: 2vw;
+            margin-right: 2vw;
+        }
+
+        .left1 .proImg p, .right1 .proImg p {
+            font-size: 3.5vw;
+            color: #ff4e22;
+            font-weight: bold;
+            margin: 1vw;
+        }
+
+        .left1 .proImg img, .right1 .proImg img {
+            width: 16vw;
+            height: 18vw;
+        }
+
+        .right1 {
+            margin-top: 5vw;
+        }
+
+        #bottom {
+            width: 100%;
+            height: 10vw;
+        }
+
+        #bottom p {
+            float: left;
+            margin-left: 3vw;
+            font-size: 3.5vw;
+            text-align: center;
+            line-height: 10vw;
+        }
+
+        #bottom .b1 {
+            font-weight: bold;
+            font-size: 4vw;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <div class="bgLogo"></div>
+    <div class="search"><i class="fa fa-search" aria-hidden="true"></i>寻找宝贝店铺</div>
+</div>
+<div id="loop">
+    <img src="image/2.jpg">
+</div>
+<ul id="nav">
+    <li><img src="image/3.png">
+        <p>天猫新品</p></li>
+    <li><img src="image/4.png">
+        <p>今日爆款</p></li>
+    <li><img src="image/5.png">
+        <p>天猫国际</p></li>
+    <li><img src="image/6.png">
+        <p>饿了么</p></li>
+    <li><img src="image/7.png">
+        <p>天猫超市</p></li>
+    <li><img src="image/8.png">
+        <p>充值中心</p></li>
+    <li><img src="image/9.png">
+        <p>机票酒店</p></li>
+    <li><img src="image/10.png">
+        <p>金币庄园</p></li>
+    <li><img src="image/11.png">
+        <p>阿里拍卖</p></li>
+    <li><img src="image/12.png">
+        <p>淘宝吃货</p></li>
+</ul>
+<div id="products">
+    <div id="top">
+        <div class="left">
+            <div class="list">
+                <div class="left1">
+                    <h3>聚划算</h3>
+                    <div class="proImg">
+                        <p>品牌折扣</p>
+                        <img src="image/13.PNG">
+                    </div>
+                </div>
+                <div class="right1">
+                    <div class="proImg">
+                        <p>便宜好货</p>
+                        <img src="image/14.PNG">
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="left1">
+                    <h3>淘抢购</h3>
+                    <div class="proImg">
+                        <p>限时半价</p>
+                        <img src="image/15.PNG">
+                    </div>
+                </div>
+                <div class="right1">
+                    <div class="proImg">
+                        <p>9.9包邮</p>
+                        <img src="image/16.PNG">
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="left1">
+                    <h3>每日好店</h3>
+                    <div class="proImg">
+                        <p>深藏的店</p>
+                        <img src="image/17.PNG">
+                    </div>
+                </div>
+                <div class="right1">
+                    <div class="proImg">
+                        <p>&nbsp;</p>
+                        <img src="image/18.PNG">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="list">
+                <div class="left1">
+                    <h3>淘宝直播</h3>
+                    <div class="proImg">
+                        <p>好物推荐</p>
+                        <img src="image/19.PNG">
+                    </div>
+                </div>
+                <div class="right1">
+                    <div class="proImg">
+                        <p>&nbsp;</p>
+                        <img src="image/20.PNG">
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="left1">
+                    <h3>有好货</h3>
+                    <div class="proImg">
+                        <p>口碑推荐</p>
+                        <img src="image/21.PNG">
+                    </div>
+                </div>
+                <div class="right1">
+                    <div class="proImg">
+                        <p>&nbsp;</p>
+                        <img src="image/22.PNG">
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="left1">
+                    <h3>喔哦视频</h3>
+                    <div class="proImg">
+                        <p>粉丝爱看</p>
+                        <img src="image/23.PNG">
+                    </div>
+                </div>
+                <div class="right1">
+                    <div class="proImg">
+                        <p>&nbsp;</p>
+                        <img src="image/24.PNG">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <p class="b1">淘宝头条</p>
+        <p>萌宠</p>
+        <p>为什么喊猫的名字，他总不理我</p>
+    </div>
+</div>
+</body>
+</html>

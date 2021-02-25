@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+<script>
+    let oUl = document.getElementsByTagName('ul')[0];
+    // oUl.children[0].style.background = 'red';
+    oUl.firstElementChild.style.background = 'green';
+    //第一个子节点
+    oUl.firstElementChild.nextElementSibling.style.background = 'blue';
+    //第一个子节点的下一个兄弟节点
+    oUl.lastElementChild.style.background = 'yellow';
+    //最后一个子节点
+    oUl.lastElementChild.previousElementSibling.style.background = 'orange';
+    //最后一个子节点的上一个兄弟节点
+</script>
+
+</body>
+</html>
